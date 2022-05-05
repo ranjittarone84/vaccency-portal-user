@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+  <style type="text/css">
+    .container{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+	<h2>register</h2>
+	<form action="/getdata" method="post" enctype="multipart/form-data">
+      <p>fname : <input type="text" name="fname"></p>
+      <p>lname : <input type="text" name="lname"></p>
+      <p>email : <input type="email" name="email"></p>
+      <p>password : <input type="password" name="password"></p>
+      <p>mobile : <input type="text" name="mobile"></p>
+      <p>user_type
+        <select name="user_type">
+         <option value="2">HR</option>
+         <option value="1">admin</option>
+        </select>
+    </p>
+      <p>company_name : <input type="text" name="company_name"></p>
+      <p>profile_photo : <input type="file" name="profile_photo"></p>
+      <p>gender
+       <select name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="transgender">transgender</option>
+        </select>
+      </p>
+      <p>address : <input type="text" name="address"></p>
+      <p>landmark : <input type="text" name="landmark"></p>
+      <p>city : <input type="text" name="city"></p>
+      <p>state : <input type="text" name="state"></p>
+
+      <p>pincode : <input type="text" name="pincode"></p>
+      <p>dob : <input type="date" name="dob"></p>
+      <p><input type="submit" name="Register"></p>
+		<p><a href="/userview">view</a></p>
+	</form>
+</div>
+</body>
+</html>

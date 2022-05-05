@@ -1,0 +1,74 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>view</title>
+</head>
+<body>
+  <h2>student  data</h2>
+  <p><a href="/register">register</a></p>
+  <table border="1">
+    <tr>
+      <th>id</th>
+      <th>fname</th>
+      <th>lname</th>
+      <th>email</th>
+      <th>mobile</th>
+      <th>dob</th>
+      <th>course_name</th>
+      <th>course_status</th>
+      <th>ssc_percentage</th>
+      <th>ssc_college_name</th>
+      <th>hsc_percentage</th>
+      <th>hsc_college_name</th>
+      <th>graduate_percentage</th>
+      <th>graduate_college_name</th>
+      <th>technical skill</th>
+      <th>resume path</th>
+      <th>photo path</th>
+      <th>created_at</th>
+      <th>updated_at</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+      <td>{{ row[2] }}</td>
+      <td>{{ row[3] }}</td>
+      <td>{{ row[4] }}</td>
+      <td>{{ row[5] }}</td>
+      <td>{{ row[6] }}</td>
+      <td>{{ row[7] }}</td>
+      <td>{{ row[8] }}</td>
+      <td>{{ row[9] }}</td>
+      <td>{{ row[10] }}</td>
+      <td>{{ row[11] }}</td>
+      <td>{{ row[12] }}</td>
+      <td>{{ row[13] }}</td>
+      <td>{{ row[14] }}</td>
+      <td>{{ row[15] }}</td>
+      <td>{{ row[16] }}</td>
+      <td>{{ row[17] }}</td>
+      <td>{{ row[18] }}</td>
+      <td><a href="/delete?id={{row[0]}}">Delete</a></td>
+      
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

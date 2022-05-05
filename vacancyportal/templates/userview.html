@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>view</title>
+  <style type="text/css">
+    table{
+    ]margin-top: 10px;
+    font-family: tahoma;
+    font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2 align="center">Student  data</h2>
+  <hr>
+  <p align="center"><a href="/userregister">register</a></p>
+
+    {% for row in data %}
+    <table border="1" align="center" cellpadding="10" cellpadding="10" rules="all">
+      <tr>
+          <th>id</th>
+          <td>{{row[0]}}</td>
+          <th>fname</th>
+          <td>{{row[1]}}</td>
+          <th>lname</th>
+          <td>{{row[2]}}</td>
+      </tr>
+      <tr>
+          <th>email</th>
+          <td>{{row[3]}}</td>
+      
+          <th>password</th>
+          <td>{{row[4]}}</td>
+  
+          <th>mobile</th>
+          <td>{{row[5]}}</td>
+      </tr>
+      <tr>
+          <th>user_type</th>
+          {% if row[6]==1 %}
+          <td>ADMIN</td>
+          {% endif %}
+          {% if row[6]==2 %}
+          <td>HR</td>
+          {% endif %}
+          <th>company_name</th>
+          <td>{{row[7]}}</td>
+          <th>gender</th>
+          <td>{{row[9]}}</td>
+      </tr>
+      <tr>
+          <th>profile_photo</th>
+          <td><img src="{{row[8]}}" height="200"></td>
+          <th>address</th>
+          <td>{{row[10]}}</td>
+          <th>landmark</th>
+          <td>{{row[11]}}</td>
+      </tr>
+      <tr>   
+      </tr>
+      <tr>
+          <th>city</th>
+          <td>{{row[12]}}</td>
+          <th>state</th>
+          <td>{{row[13]}}</td>
+          <th>pincode</th>
+          <td>{{row[14]}}</td>
+     </tr>
+     <tr>
+          <th>dob</th>
+          <td>{{row[15]}}</td>
+      </tr>
+      <tr>
+          <th>created_at</th>
+          <td>{{row[16]}}</td>
+      
+          <th>updated_at</th>
+          <td>{{row[17]}}</td>
+      </tr>
+      </table>
+      <hr />
+    {% endfor %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
